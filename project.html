@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Fat Cat Bakery</h1>
+                <p>Artisan Bakery</p>
+            </div>
+            <div class="search-container">
+                <div class="search-layer">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-filters">
+                    <span>Filter by:</span>
+                    <select class="search-filter">
+                        <option value="all">All Categories</option>
+                        <option value="cakes">Cakes</option>
+                        <option value="bread">Bread</option>
+                        <option value="pastries">Pastries</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="coffee">Coffee</option>
+                    </select>
+                    <select class="search-filter">
+                        <option value="all">All Prices</option>
+                        <option value="under10">Under Rs-99/-</option>
+                        <option value="10-20">Rs-99 to Rs-250/-</option>
+                        <option value="20-30">Rs-250 to Rs-500/-</option>
+                        <option value="over30">Over Rs-500/-</option>
+                    </select>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Freshly Baked Goodness</h2>
+                <p>Handcrafted with love since 2014</p>
+                <a href="#products" class="btn">View Our Selection</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="section-header">
+                <h2>Our Bakery Selection</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cakes">Cakes</button>
+                    <button class="filter-btn" data-filter="bread">Bread</button>
+                    <button class="filter-btn" data-filter="pastries">Pastries</button>
+                    <button class="filter-btn" data-filter="cookies">Cookies</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/8gJfVLBf/Impossibly-Decadent-Triple-Chocolate-Cake.jpg" alt="Chocolate Strawberry Cake" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, sugar, cocoa powder, eggs, butter, milk, vanilla extract</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Cake</h3>
+                        <p class="product-desc">Rich, moist chocolate cake with fudge frosting</p>
+                        <p class="product-price">Rs-499/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/LDCJHGCk/Crusty-Sourdough-Baguettes-Bake-Bakery-Quality-Bread-at-Home.jpg" alt="Artisan Sourdough" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, water, salt, sourdough starter</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artisan Sourdough</h3>
+                        <p class="product-desc">Traditional slow-fermented sourdough bread</p>
+                        <p class="product-price">Rs-99/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://i.pinimg.com/736x/d6/02/c3/d602c33ad9463f2f98a83d94d7a6830f.jpg" alt="Blue Berry Cake" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, berrys, butter, milk, curd </p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blue Forest</h3>
+                        <p class="product-desc">Traditional slow-fermented sourdough bread</p>
+                        <p class="product-price">Rs-799/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/95/0a/0a/950a0a62dcebd0b0d9721751c7367d0e.jpg" alt="Cupcakes" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Flour, butter, sugar, yeast, vanilla cream</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cupcakes</h3>
+                            <p class="product-desc">Cake with delicious Vanilla flavor cream filling.</p>
+                            <p class="product-price">Rs-45/-</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="pastries">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/1e/92/70/1e92708d4c30a0c225cd6e2a8d6aac8b.jpg" alt="Strawberry Cheesecake" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Strawberry, Egg, sugar, Whipped cream, Cheese cream</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Strawberry Cheesecake</h3>
+                            <p class="product-desc">Cake with delicious Vanilla flavor cream filling.</p>
+                            <p class="product-price">Rs-125/-</p>
+                        </div>
+                    </div>
+
+                <div class="product-card" data-category="pastries">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/4Z5KqR5j/The-Baker-s-Grove-in-Shrewsbury-NJ-Pastry-Arts-Magazine.jpg" alt="Butter Croissant" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, butter, milk, sugar, yeast, salt</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Butter Croissant</h3>
+                        <p class="product-desc">Flaky, buttery French croissant Crispy with sweetness</p>
+                        <p class="product-price">Rs-50/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/fVFqjrK1/Toll-House-Cookie-Recipe.jpg" alt="Chocolate Chip Cookies" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, butter, sugar, eggs, chocolate chips, vanilla, baking soda</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p class="product-desc">Classic cookies with melty chocolate chips</p>
+                        <p class="product-price">Rs-100/- (dozen)</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cookies">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/8f/37/f3/8f37f36901b9d223f7de411050cc164b.jpg" alt="Blueberry Heaven Cookies" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Oats, flour, sugar, butter, Blueberrys, Suger Powder, chocochips</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Blueberry Heaven Cookies</h3>
+                            <p class="product-desc">Soft, buttery cookies packed with blueberries and topped with a tangy lemon glaze.</p>
+                            <p class="product-price">Rs-120/- (dozen)</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cookies">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/e6/fe/2c/e6fe2c1a02101296d2b8972cd707264b.jpg" alt=" Red Velvet Cookies" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Oats, flour, sugar, butter, Blueberrys, Suger Powder, chocochips</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3> Red Velvet Cookies</h3>
+                            <p class="product-desc">soft red velvet cookies filled with a creamy cheesecake center.</p>
+                            <p class="product-price">Rs-165/- (dozen)</p>
+                        </div>
+                    </div>
+
+
+                <div class="more-items-section" id="more-cookies" style="display: none;">
+                    <div class="product-card" data-category="cookies">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/08/ac/31/08ac3111eb52fd0aec6835c54b27dd60.jpg" alt="Oatmeal Raisin Cookies" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Oats, flour, sugar, butter, cinnamon, chocochips</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Oatmeal Raisin Cookies</h3>
+                            <p class="product-desc">Chewy oatmeal cookies with sweet raisins.</p>
+                            <p class="product-price">Rs-90/- (dozen)</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/DPY0b4NS/Red-Velvet-Strawberry-Delight-Cake.jpg" alt="Red Velvet Cake" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, sugar, buttermilk, butter, cocoa, vinegar, cream cheese</p>
+                            <a href="#contact" class="btn">Inquire About This Product</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Velvet Cake</h3>
+                        <p class="product-desc">Velvety texture with cream cheese frosting</p>
+                        <p class="product-price">Rs-129/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/MyxtRdVn/Recipe-How-to-bake-crusty-ciabatta-at-home.jpg" alt="Ciabatta Bread" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, water, yeast, salt, olive oil</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ciabatta Bread</h3>
+                        <p class="product-desc">Italian white bread with porous texture</p>
+                        <p class="product-price">Rs-79/-</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-img">
+                        <img src="https://i.pinimg.com/736x/45/8f/df/458fdfadb7dac6c04ed7d863a19e182e.jpg" alt="Brown Bread" loading="Fast">
+                        <div class="product-overlay">
+                            <h3>Ingredients</h3>
+                            <p>Flour, water, yeast, olive oil</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brown Bread</h3>
+                        <p class="product-desc">Italian Brown bread with porous texture</p>
+                        <p class="product-price">Rs-39/-</p>
+                    </div>
+                </div>
+
+                <div class="more-items-section" id="more-cakes" style="display: none;">
+                    <div class="product-card" data-category="cakes">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/42/26/c1/4226c1f750ad9d5fa6fa6d97ae7d2d9d.jpg" alt="Lemon Drizzle Cake" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Flour, sugar, eggs, butter, lemon zest, lemon juice</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lemon Drizzle Cake</h3>
+                            <p class="product-desc">Light and zesty lemon cake with a sweet drizzle.</p>
+                            <p class="product-price">Rs-399/-</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cakes">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/04/29/b3/0429b3a8329dafdc283f3324efab0325.jpg" alt="Carrot Cake" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Carrots, flour, sugar, eggs, cinnamon, cream cheese frosting</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Carrot Cake</h3>
+                            <p class="product-desc">Moist carrot cake with walnuts and cream cheese frosting.</p>
+                            <p class="product-price">Rs-599/-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-items-section" id="more-bread" style="display: none;">
+                    <div class="product-card" data-category="bread">
+                        <div class="product-img">
+                            <img src="https://i.pinimg.com/736x/a6/c9/f0/a6c9f0388beea16d5d0bb6f4b36189c1.jpg" alt="Rye Bread" loading="lazy">
+                            <div class="product-overlay">
+                                <h3>Ingredients</h3>
+                                <p>Rye flour, wheat flour, water, salt, yeast</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Rye Bread</h3>
+                            <p class="product-desc">Dense and flavorful dark rye bread, perfect for sandwiches.</p>
+                            <p class="product-price">Rs-89/-</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2014, Sweet Delights Bakery has been serving the community with handcrafted baked goods made from the finest ingredients. Our master bakers combine traditional techniques with innovative flavors to create unforgettable treats.</p>
+                <p>We source locally whenever possible and never use artificial preservatives.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://i.ibb.co/SwSs8bDw/Bakery-shelving.jpg" alt="Bakery Interior" loading="Fast">
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Custom Inquiry</h2>
+            <form class="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="product-type">Product Type</label>
+                    <select id="product-type" name="product-type">
+                        <option value="cake">Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="pastries">Pastries</option>
+                        <option value="bread">Bread</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-needed">Date Needed</label>
+                    <input type="date" id="date-needed" name="date-needed" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="details">Special Requests/Details</label>
+                    <textarea id="details" name="details" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Narengi, Near Vishal Market<br>Sweetville, SV 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday-Friday: 7am-7pm<br>Saturday: 8am-6pm<br>Sunday: 8am-4pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 6901478738<br>Email:jigyashugogoi0@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
